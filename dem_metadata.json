@@ -1,0 +1,45 @@
+{
+  "name": "Roads at Risk - Stone Harbor DEM",
+  "source": "USGS 3DEP Bare Earth DEM Dynamic ImageServer",
+  "sourceUrl": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+  "sourceDescription": "USGS 3D Elevation Program (3DEP) Bare Earth DEM Dynamic service, retrieved for the Roads at Risk municipal rollout.",
+  "downloadedAt": "2026-08-10",
+  "processing": "Exported from USGS 3DEP at municipal extent, masked to the Stone Harbor Borough boundary, adaptively resampled to 5.2 ft pixels to keep the browser-delivered raster within operational size limits, and compressed as a Cloud Optimized GeoTIFF.",
+  "horizontalCrs": "EPSG:3857",
+  "verticalUnits": "meters",
+  "displayElevationUnits": "feet",
+  "pixelSizeMeters": 1.5854393788583514,
+  "pixelSizeFeet": 5.201572765262499,
+  "adaptiveResolution": true,
+  "width": 3319,
+  "height": 4822,
+  "nodata": -999999,
+  "minMeters": -1.228,
+  "maxMeters": 6.994,
+  "meanMeters": 0.495,
+  "stdDevMeters": 1.515,
+  "minFeet": -4.02887139106,
+  "maxFeet": 22.946194225630002,
+  "webMercatorBounds": [
+    -8326066.529449,
+    4723599.503579144,
+    -8320804.456150569,
+    4731244.492264
+  ],
+  "leafletBounds": [
+    [
+      39.0134687,
+      -74.7943282
+    ],
+    [
+      39.0667991,
+      -74.7470612
+    ]
+  ],
+  "files": {
+    "demCog": "stone_harbor_dem_5ft_cog.tif",
+    "hillshadeCog": "stone_harbor_hillshade_cog.tif",
+    "hillshadePng": "stone_harbor_hillshade.png",
+    "boundaryGeojson": "stone_harbor_boundary.geojson"
+  }
+}
