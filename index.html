@@ -3020,6 +3020,7 @@
 
       .mapControl{
         padding:12px;
+        margin-bottom:4px;
       }
 
       .mapModes button{
@@ -3028,10 +3029,15 @@
       }
 
       .mobileToolNav{
-        top:max(8px, env(safe-area-inset-top));
+        position:relative;
+        top:auto;
         gap:8px;
         padding:7px;
         border-radius:16px;
+      }
+
+      .rightStack .mobileToolNav{
+        margin:0 0 18px;
       }
 
       .mobileToolNav button{
@@ -3041,6 +3047,10 @@
 
       .rightStack{
         gap:14px;
+      }
+
+      .rightStack .toolPane + .toolPane{
+        margin-top:16px;
       }
 
       .toolPane{
@@ -3059,6 +3069,14 @@
       .tinyChartWrap{
         height:clamp(250px, 32vw, 330px);
         min-height:250px;
+      }
+
+      .outlookChartsGrid{
+        gap:16px;
+      }
+
+      .outlookChartCard{
+        padding:14px;
       }
 
       .crossSectionPane,
@@ -3206,6 +3224,31 @@
       .exportGrid{
         grid-template-columns:1fr;
         gap:16px;
+      }
+    }
+
+    @media (min-width:621px) and (max-width:1180px){
+      .crossSectionPane .toolTitleRow{
+        display:grid;
+        grid-template-columns:minmax(0,1fr) auto;
+        align-items:center;
+        gap:12px;
+      }
+
+      .crossSectionPane .toolTitle{
+        width:auto;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:10px;
+      }
+
+      .crossSectionPane .paneActions{
+        width:auto;
+        display:grid;
+        grid-template-columns:auto 40px 40px;
+        align-items:center;
+        gap:8px;
       }
     }
 
